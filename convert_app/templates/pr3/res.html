@@ -1,0 +1,313 @@
+<html >
+<head>
+<style type="text/css"> 
+ h1 {    color:slateblue;background-color:lavender;font-family:comic sans ms;font-size:40px;}
+ pre {color:purple;font-family:Papyrus;font-size:15px;}
+ option {color:black;font-family:Papyrus;}
+ input {color:olive;font-family:comic sans ms;font-size:20px;}
+ body {background-color:lavender;}
+ p {color:maroon;font-family:Papyrus;font-size:30px;}
+ a{font-family: arial, verdana, sans-serif;  font-size:20px;  font-weight:bold;}
+a:link {  color:red;  text-decoration:none; align:center;} 
+a:visited {  text-decoration:none; align:center;} 
+a:hover {  color:orange;  text-decoration:none;text-align:center;} 
+a:active { color:red;   text-decoration:none; align:center;} 
+ </style>
+</head>
+
+
+
+<body>
+{% if  w1 %}
+<title>length</title>
+<h1><u>length</u></h1>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<p>From</p>
+<select name="n2" length="20">
+<option >metres </option>
+<option >millimetres</option>
+<option>centimetres</option>
+<option>kilometres</option>
+<option>inches</option>
+<option>feet</option>
+<option>yards</option>
+<option>miles</option>
+<option>nautical miles</option>
+</select>
+<p>To</p><select name="n3">
+<option   >metres</option>
+<option >millimetres</option>
+<option  >centimetres</option>
+<option   >kilometres</option>
+<option  >inches</option>
+<option   >feet</option>
+<option   >yards</option>
+<option   >miles</option>
+<option   >nautical miles</option>
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+</form>
+<a href="/pr3/">click here to go back to home page</a>
+
+{% endif %}
+
+{% if x %}
+<h2>Answer</h2>
+<input type="text" size="25" value={{x}}>
+{% endif %}
+
+{% if  w2  %}
+<title>area</title>
+<h1><u>Area</u></h1>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<p>From</p><select name="n2" >
+<option >square cm </option>
+<option >square inch</option>
+<option>square feet</option>
+<option>square yard</option>
+<option>square m</option>
+<option>square km </option>
+<option>acre</option>
+<option>hectare</option>
+</select>
+<p>To</p><select name="n3">
+<option >square cm </option>
+<option >square inch</option>
+<option>square feet</option>
+<option>square yard</option>
+<option>square m</option>
+<option>square km </option>
+<option>acre</option>
+<option>hectare</option>
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+</form>
+<a href="/pr3/">click here to go back</a>
+{% endif %}
+{% if x1 %}
+<h2>Answer</h2>
+<input type="text" size="25" value={{x1}}>
+{% endif %}
+
+{% if  w3 %}
+<title>weight</title>
+<h1><u>Weight</u></h1>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<p>From</p>
+<select name="n2" >
+<option >kilogram </option>
+<option >gram</option>
+<option>milligram</option>
+<option>stones</option>
+<option>ounce</option>
+<option>metrictons</option>
+<option>pound</option>
+</select>
+<p>To</p><select name="n3">
+<option >kilogram </option>
+<option >gram</option>
+<option>milligram</option>
+<option>stones</option>
+<option>ounce</option>
+<option>metrictons</option>
+<option>pound</option>
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+</form>
+<a href="/pr3/">click here to go back</a>
+{% endif %}
+
+{% if x3 %}
+<h2>Answer</h2>
+<input type="text" size="25" value={{x3}}>
+{% endif %}
+
+
+
+{% if  w4  %}
+<title>pressure</title>
+<h1><u>Pressure</u></h1>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<p>From</p>
+<select name="n2" >
+<option >atmosphere</option>
+<option >bars</option>
+<option>pascals</option>
+<option>mm hg</option>
+</select>
+<p>To</p><select name="n3">
+<option >atmosphere</option>
+<option >bars</option>
+<option>pascals</option>
+<option>mm hg</option>
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+</form>
+<a href="/pr3/">click here to go back home page</a>
+{% endif %}
+
+{% if x5 %}
+
+<h2>Answer</h2>
+<input type="text" size="25" value={{x5}}>
+{% endif %}
+
+
+
+{% if  w5 %}
+<title>temperature</title>
+<h1><u>Temperature</u></h1>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<p>From</p>
+<select name="n2" >
+<option >celsius</option>
+<option >fahrenheit</option>
+<option>kelvin</option>
+</select>
+<p>To</p><select name="n3">
+<option >celsius</option>
+<option >fahrenheit</option>
+<option>kelvin</option>
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+</form>
+<a href="/pr3/">click here to go back</a>
+{% endif %}
+{%if x6 %}
+<h2>Answer</h2>
+<input type="text" size="25" value={{x6}}>
+{% endif %}
+
+
+
+{% if  w6  %}
+<title>power</title>
+<h1><u>Power</u></h1>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<p>From</p>
+<select name="n2" >
+<option >kilo watt hour</option>
+<option>horse power</option>
+<option >joules</option>
+<option >kilo calories</option>
+<option>calories</option>
+<option >electron volt</option>
+
+</select>
+<p>To</p>
+<select name="n3">
+<option >kilo watt hour</option>
+<option>horse power</option>
+<option >joules</option>
+<option >kilo calories</option>
+<option>calories</option>
+<option >electron volt</option>
+
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+</form>
+<a href="/pr3/">click here to go back</a>
+{% endif %}
+{% if x4 %}
+<h2>Answer</h2>
+<input type="text" size="25" value={{x4}}>
+{% endif %}
+
+
+
+{% if  w7  %}
+<title>time</title>
+<h1><u>Time</u></h1>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<p>From</p>
+<select name="n2" >
+<option >seconds</option>
+<option >minutes</option>
+<option>hours</option>
+<option>days</option>
+<option>weeks</option>
+</select>
+<p>To</p><select name="n3">
+<option >seconds</option>
+<option >minutes</option>
+<option>hours</option>
+<option>days</option>
+<option>weeks</option>
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+</form>
+
+<a href="/pr3/">click here to go back</a>
+{% endif %}
+
+{% if x8 %}
+
+<h2>Answer</h2>
+<input type="text" size="25" value={{x8}}>
+
+{% endif %}
+
+
+{% if  w8  %}
+<title>volume</title>
+<h1><u>volume</u></h1>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<p>From</p>
+<select name="n2">
+<option >litres</option>
+<option>cubic mm</option>
+<option>cubic meters</option>
+<option>cubic feet</option>
+<option>gallons uk</option>
+<option>gallons us</option>
+<option>pints uk</option>
+<option>dry pt us</option>
+<option>liquid pt us</option>
+<option>liquid oz us</option>
+<option>fluid oz us</option>
+<option>barrels us</option>
+</select>
+<p>To</p><select name="n3">
+<option >litres</option>
+<option>cubic mm</option>
+<option>cubic meters</option>
+<option>cubic feet</option>
+<option>gallons uk</option>
+<option>gallons us</option>
+<option>pints uk</option>
+<option>dry pt us</option>
+<option>liquid pt us</option>
+<option>liquid oz us</option>
+<option>fluid oz us</option>
+<option>barrels us</option>
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+</form>
+<a href="/pr3/">click here to go back</a>
+{% endif %}
+
+{% if x7 %}
+<h2>Answer</h2>
+<input type="text" size="25" value={{x7}}>
+{% endif %}
+
+<br></br>
+
+</body>
+</html> 

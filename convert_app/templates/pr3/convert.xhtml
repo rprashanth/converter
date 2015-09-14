@@ -1,0 +1,52 @@
+<html >
+<head>
+<style type="text/css"> 
+ h1 {    color:slateblue;background-color:lavender;font-family:comic sans ms;font-size:40px;}
+ pre {color:purple;font-family:Papyrus;font-size:15px;}
+ option {color:black;font-family:Papyrus;}
+ input {color:olive;font-family:comic sans ms;font-size:20px;}
+ body {background-color:lavender;}
+ p {color:maroon;font-family:Papyrus;font-size:30px;}
+ 
+ </style>
+</head>
+<body>
+<h1><u>length</u></h1>
+<form action="/pr3/convert/" method="post">
+<p>From</p>
+<select name="n2" >
+<option >metres </option>
+<option >millimetres</option>
+<option>centimetres</option>
+<option>kilometres</option>
+<option>inches</option>
+<option>feet</option>
+<option>yards</option>
+<option>miles</option>
+<option>nautical miles</option>
+</select>
+<p>To</p><select name="n3">
+<option   >metres</option>
+<option   >millimetres</option>
+<option  >centimetres</option>
+<option   >kilometres</option>
+<option  >inches</option>
+<option   >feet</option>
+<option   >yards</option>
+<option   >miles</option>
+<option   >nautical miles</option>
+</select>
+<p>Value</p><input type="text" size="20" name="n4">
+<input type="submit" value="submit">
+
+</form>
+<form action="/pr3/convert/" method="post">
+{% csrf_token %}
+<table class="name" border="1" size="100">
+<td>{{x}}</td>
+</table>
+</form>
+
+</form>
+</body>
+</html> 

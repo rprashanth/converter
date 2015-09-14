@@ -1,0 +1,34 @@
+<html>
+<title>converter</title>
+<style >
+p{color:#ef890a;font-size:35;}
+body{background-color:black;text-align:center;}
+.name{color:green;font-size:25;}
+#page {padding:10px 20px 30px;background-color:black;border:8px solid #fff90a;height:580px;}
+#header{font-size:35px;font-family:Lucida Calligraphy;font-style:italic bold;text-color:black; margin:0; background-color:#90ff56;  height:60px;  padding:5px 50px  10px ;
+	border:5px solid #666666;
+	text-align:center;} 
+</style>
+<body>
+<div id="page">
+<div id="header">UNIT CONVERTER</div>
+<form action="/pr3/convert1/" method="post">
+{% csrf_token %}
+<p>Enter the unit</p>
+<select name="n1" >
+<option >area</option>
+<option >length</option>
+<option>time</option>
+<option>volume</option>
+<option>pressure</option>
+<option>temperature       </option>
+<option>weight</option>
+<option>power</option>
+</select>
+<input type="submit" value="submit">
+
+</form>
+</div>
+
+</body>
+</html>
